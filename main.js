@@ -2,7 +2,7 @@ var http = require('http');
 var one = require('./one.js');
 var two = require('./two.js');
 
-http.createServer(function (req, res) {
+var server = http.createServer(function (req, res) {
 
    //if(req.query.x == "add") {
 	  	one.addFunction(5, 5, (result)=>{
@@ -20,6 +20,12 @@ http.createServer(function (req, res) {
 	  });
   }  */
   
-}).listen(3000, ()=>{
+});
+/*.listen(3000, ()=>{
 	console.log('Server is running on 3000');
+});*/
+
+server.listen(3000, ()=>{
+	console.log('Server is running on 3000');
+	server.close();
 });
