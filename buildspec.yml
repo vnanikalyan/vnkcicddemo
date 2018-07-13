@@ -1,11 +1,13 @@
-version: 0.2
+version: 0.3
           
 phases:
   install:
-    commands:      
-    finally:      
+    commands: 
   pre_build:
     commands:      
   build:
     commands:
       - node main.js
+  post_build:
+    commands:
+      - echo Build completed on `date`
