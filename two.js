@@ -4,3 +4,5 @@ this.mulFunction = function(x, y, callback) {
 }
 
 //module.exports = oneFunction
+
+console.log('I am two.js file');
