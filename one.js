@@ -4,3 +4,5 @@ this.addFunction = function(x, y, callback) {
 }
 
 //module.exports = oneFunction
+
+console.log('This is one.js file');
