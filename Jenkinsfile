@@ -16,6 +16,9 @@ pipeline {
         stage("test") {
             steps {
                 echo 'testing the application...'
+                nodejs('node-10.16.3') {
+                    sh 'echo "In the if condition"'
+                }
             }
         }
 
