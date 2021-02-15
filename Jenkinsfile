@@ -18,6 +18,8 @@ pipeline {
                 echo 'testing the application...'
                 nodejs('node-10.16.3') {
                     sh 'echo "In the if condition"'
+                    sh 'echo "npm:"; npm -v'
+                    sh 'echo "node:"; node -v'
                 }
             }
         }
