@@ -27,6 +27,7 @@ pipeline {
         stage("deploy") {
             steps {
                 echo 'deploying the application...'
+                echo 'actually we are supposed to deploy using ansible'
             }
         }
     }
